@@ -1,0 +1,32 @@
+name: OasisRace
+version: ${version}
+main: top.oasismc.oasisrace.OasisRace
+api-version: 1.19
+load: STARTUP
+authors: [ OasisGroup ]
+description: 专用于OasisMC服务器的种族插件
+permissions:
+  oasis.race.human:
+    default: op
+  oasis.race.human.farming:
+    default: op
+  oasis.race.human.nomadic:
+    default: op
+  oasis.race.undead:
+    default: op
+  oasis.race.undead.vampire:
+    default: op
+  oasis.race.undead.dominator:
+    default: op
+  oasis.race.nature:
+    default: op
+  oasis.race.nature.health:
+    default: op
+  oasis.race.nature.death:
+    default: op
+  oasis.race.aquatic:
+    default: op
+  oasis.race.aquatic.naga:
+    default: op
+  oasis.race.aquatic.fairy:
+    default: op

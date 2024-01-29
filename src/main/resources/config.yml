@@ -1,0 +1,125 @@
+#人类根种族
+human:
+  perm: oasis.race.human
+  extra_exp_scale: 0.1
+#人类种族：农耕
+farming:
+  team: farming
+  perm: oasis.race.human.farming
+  #获得的经验
+  crop_exp: 1
+  #额外的农作物
+  extra_crops: 1
+  extra_planks: 1
+  pre_race: human
+  friend_radius: 25
+#人类种族：游牧
+nomadic:
+  team: nomadic
+  perm: oasis.race.human.nomadic
+  pre_race: human
+  extra_breed_exp: 0.5
+  extra_animal_drop: 1
+  wandering_villager_radius: 50
+
+#亡灵根种族
+undead:
+  team: undead
+  perm: oasis.race.undead
+  night_time: 13000
+#亡灵种族: 吸血鬼
+vampire:
+  #所属队伍
+  team: vampire
+  #种族权限
+  perm: oasis.race.undead.vampire
+  #吸血比例
+  suck_proportion: 0.25
+  pre_race: undead
+  allow_eat_food:
+    - PROKCHOP
+    - COOKED_PORKCHOP
+    - BEEF
+    - COOKED_BEEF
+    - CHICKEN
+    - COOKED_CHICKEN
+    - ROTTEN_FLESH
+    - RABBIT
+    - COOKED_RABBIT
+    - MUTTON
+    - COOKED_MUTTON
+    - BREAD
+#亡灵种族：亡灵支配者
+dominator:
+  team: dominator
+  perm: oasis.race.undead.dominator
+  convene_radius: 25
+  pre_race: undead
+  undead_ignore: true
+  undead_help: true
+
+#自然之灵根种族：
+nature:
+  perm: oasis.race.nature
+  heal_effect_food:
+    - ROTTEN_FLESH
+    - CHICKEN
+    - BEEF
+    - MELON_SLICE
+    - PUFFER_FISH
+    - TROPICAL_FISH
+    - COD
+    - APPLE
+    - PORKCHOP
+    - GLOW_BERRIES
+    - BEETROOT
+    - SWEET_BERRIES
+    - MUTTON
+    - RABBIT
+    - POTATO
+    - CARROT
+    - SPIDER_EYE
+    - CHORUS_FRUIT
+#自然之灵种族：生命
+health:
+  team: health
+  perm: oasis.race.nature.health
+  extra_heal_scale: 0.25
+  pre_race: nature
+  allow_eat_food:
+    - ROTTEN_FLESH
+    - CHICKEN
+    - BEEF
+    - MELON_SLICE
+    - PUFFER_FISH
+    - TROPICAL_FISH
+    - COD
+    - APPLE
+    - PORKCHOP
+    - GLOW_BERRIES
+    - BEETROOT
+    - SWEET_BERRIES
+    - MUTTON
+    - RABBIT
+    - POTATO
+    - CARROT
+    - SPIDER_EYE
+    - CHORUS_FRUIT
+death:
+  team: death
+  perm: oasis.race.nature.death
+  pre_race: nature
+
+#水生根种族
+aquatic:
+  perm: oasis.race.aquatic
+#水生种族: 娜迦
+naga:
+  team: naga
+  perm: oasis.race.aquatic.naga
+  horn_cd_tick: 600
+  control_radius: 16
+#水生种族: 湖仙
+lake_fairy:
+  team: lake_fairy
+  perm: oasis.race.aquatic.fairy
